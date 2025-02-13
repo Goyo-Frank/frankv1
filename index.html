@@ -57,7 +57,7 @@
         <h1>Will you be my Valentine? 💖</h1>
         <div class="buttons">
             <button class="yes" onclick="redirectToQuestions()">Yes</button>
-            <button class="no" onmouseover="hideNoButton()" onmouseout="showNoButton()">No</button>
+            <button class="no" onmouseover="hideNoButton()" onmouseout="showNoButton()" onclick="invalidAnswer()">No</button>
         </div>
     </div>
     <script>
@@ -69,6 +69,9 @@
         }
         function redirectToQuestions() {
             window.location.href = "questions.html";
+        }
+        function invalidAnswer() {
+            alert("Invalid answer, please try again.");
         }
     </script>
 </body>
